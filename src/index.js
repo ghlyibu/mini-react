@@ -19,3 +19,5 @@ const virtualDOM = (
 
 console.log(virtualDOM);
 
+React.render(virtualDOM,document.getElementById("root"))
+
