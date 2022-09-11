@@ -1,4 +1,7 @@
 import React from "./TinyReact"
+function Foo(){
+  return <div>Foo</div>
+}
 const virtualDOM = (
   <div className="container">
     <h1>你好 Tiny React</h1>
@@ -14,10 +17,11 @@ const virtualDOM = (
     <h3>这个将会被删除</h3>
     2, 3
     <input type="text" value="13" />
+    <Foo></Foo>
   </div>
 )
 
 console.log(virtualDOM);
 
-React.render(virtualDOM,document.getElementById("root"))
+React.render(<Foo />,document.getElementById("root"))
 

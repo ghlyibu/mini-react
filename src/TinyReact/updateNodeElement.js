@@ -1,6 +1,6 @@
 export default function updateNodeElement(newElement, virtualDOM) {
     // 获取节点对应的属性对象
-    const newProps = virtualDOM.props
+    const newProps = virtualDOM.props || {}
     Object.keys(newProps).forEach(propName => {
         const newPropsValue = newProps[propName]
         // 判断属性是否是事件属性
